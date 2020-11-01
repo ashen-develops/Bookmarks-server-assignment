@@ -13,9 +13,6 @@ const morganOption = (NODE_ENV === 'production')
   ? 'tiny'
   : 'common';
 
-app.use(morgan(morganOption));
-app.use(helmet());
-app.use(bookmarksRouter);
 //authorization needs to be before other functionality
 app.use(function validateBearerToken(req, res, next) {
   const apiToken = process.env.API_TOKEN;
@@ -29,6 +26,10 @@ app.use(function validateBearerToken(req, res, next) {
   next();
 });
 
+app.use(morgan(morganOption));
+app.use(cors());
+app.use(helmet());
+app.use(bookmarksRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello, world!');
@@ -44,7 +45,5 @@ app.use(function errorHandler(error, req, res, next) {
   }
   res.status(500).json(response);
 });
-
-app.use(cors());
 
 module.exports = app;
