@@ -4,6 +4,7 @@ const bodyParser = express.json();
 const { v4: uuid } = require('uuid');
 const logger = require('../logger');
 const { bookmarks } = require('../store');
+// console.log(bookmarks);
 
 bookmarksRouter
   .route('/bookmarks')
@@ -11,15 +12,15 @@ bookmarksRouter
     res.json(bookmarks);
   })
   .post(bodyParser, (req, res) => {
-    const {site, desc = [] } = req.body;
+    const {url, description = [] } = req.body;
 
-    if(!site) {
-      logger.error('Site is empty');
+    if(!url) {
+      logger.error('URL is empty');
       return res
         .status(400)
         .send('Invalid data');
     }
-    if (!desc) {
+    if (!description) {
       logger.error('A description is required');
       return res
         .status(400)
@@ -27,11 +28,12 @@ bookmarksRouter
     }
     const id = uuid();
 
-    const bookmark = {
-      id,
-      site,
-      desc
+    const bookmark = { 
+      id: uuid(), 
+      url, 
+      description
     };
+
     bookmarks.push(bookmark);
 
     logger.info(`Bookmark with id ${id} created`);
@@ -45,7 +47,7 @@ bookmarksRouter
 bookmarksRouter
   .route('bookmarks/:id')
   .get((req, res) => {
-    const {id} = req.params;
+    const {id} = req.params.id;
     const bookmark = bookmarks.find(b => b.id === id);
 
     if(!bookmark) {
