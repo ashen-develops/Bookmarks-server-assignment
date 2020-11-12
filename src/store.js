@@ -1,4 +1,4 @@
-const bookmarks = [
+const store = [
   {
     id: 1,
     url: 'website',
@@ -20,4 +20,4 @@ const bookmarks = [
     description: 'This is the fourth Bookmark'
   }];
 
-module.exports = {bookmarks};
+module.exports = {store};

@@ -7,6 +7,7 @@ const { store } = require('../store');
 const { isWebUri } = require('valid-url');
 // console.log(bookmarks);
 
+
 bookmarksRouter
   .route('/bookmarks')
   .get((req, res) => {
