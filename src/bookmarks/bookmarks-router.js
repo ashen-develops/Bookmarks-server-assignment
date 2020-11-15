@@ -44,10 +44,11 @@ bookmarksRouter
   });
 
 
-  bookmarksRouter
+bookmarksRouter
   .route('/bookmarks/:bookmark_id')
   .get((req, res) => {
     const { bookmark_id } = req.params;
+    console.log(bookmark_id);
 
     // eslint-disable-next-line eqeqeq
     const bookmark = store.find(c => c.id == bookmark_id);
@@ -64,7 +65,7 @@ bookmarksRouter
   .delete((req, res) => {
     const { bookmark_id } = req.params;
 
-    const bookmarkIndex = store.findIndex(b => b.id === bookmark_id);
+    const bookmarkIndex = store.findIndex(b => b.id == bookmark_id);
 
     if (bookmarkIndex === -1) {
       logger.error(`Bookmark with id ${bookmark_id} not found.`);
@@ -73,7 +74,7 @@ bookmarksRouter
         .send('Bookmark Not Found');
     }
 
-    store.bookmarks.splice(bookmarkIndex, 1);
+    store.splice(bookmarkIndex, 1);
 
     logger.info(`Bookmark with id ${bookmark_id} deleted.`);
     res

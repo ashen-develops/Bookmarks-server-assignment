@@ -1625,3 +1625,55 @@
 {"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
 {"message":"Bookmark with id 1 not found.","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Bookmark with id 0f8f466c-4545-45b6-8933-cb8b2acf9f72 created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/2","level":"error"}
+{"message":"Bookmark with id 2 not found.","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/8","level":"error"}
+{"message":"Bookmark with id 8 not found.","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Cannot read property 'splice' of undefined","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 not found.","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Bookmark with id 1 not found.","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/0","level":"error"}
+{"message":"Bookmark with id 0 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/20","level":"error"}
+{"message":"Bookmark with id 20 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/20","level":"error"}
+{"message":"Bookmark with id 20 not found.","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/2","level":"error"}
+{"message":"Bookmark with id 2 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/0","level":"error"}
+{"message":"Bookmark with id 0 not found.","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
