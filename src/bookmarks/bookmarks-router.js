@@ -65,6 +65,7 @@ bookmarksRouter
   .delete((req, res) => {
     const { bookmark_id } = req.params;
 
+    // eslint-disable-next-line eqeqeq
     const bookmarkIndex = store.findIndex(b => b.id == bookmark_id);
 
     if (bookmarkIndex === -1) {
